@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="214" id="KGk-i7-Jjw" customClass="TZTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="214"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="213"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wXJ-tU-QSD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="180"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="180" id="XpJ-gl-Tpp"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o7J-aH-M34">
+                        <rect key="frame" x="0.0" y="181" width="38" height="32"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="o7J-aH-M34" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="29j-pq-UT3"/>
+                    <constraint firstItem="wXJ-tU-QSD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="50Z-kE-Ho6"/>
+                    <constraint firstAttribute="trailing" secondItem="wXJ-tU-QSD" secondAttribute="trailing" id="9CK-NH-MJu"/>
+                    <constraint firstItem="o7J-aH-M34" firstAttribute="top" secondItem="wXJ-tU-QSD" secondAttribute="bottom" constant="1" id="Csv-2l-a1d"/>
+                    <constraint firstAttribute="bottom" secondItem="o7J-aH-M34" secondAttribute="bottom" id="jV7-QZ-27B"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="o7J-aH-M34" secondAttribute="trailing" constant="8" id="jkF-mT-AMi"/>
+                    <constraint firstItem="wXJ-tU-QSD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="q0z-Vy-eyj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="image" destination="wXJ-tU-QSD" id="A2J-S7-sr6"/>
+                <outlet property="label" destination="o7J-aH-M34" id="nPv-yI-lug"/>
+            </connections>
+            <point key="canvasLocation" x="262.5" y="221"/>
+        </tableViewCell>
+    </objects>
+</document>
